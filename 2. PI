@@ -1,0 +1,27 @@
+
+public class PI {
+
+	public static void main(String[] args) {
+		double piBabylon;
+		double piAegypten;
+		double piChina;
+		double piEuropa;
+		
+		piBabylon = 3.0 + (1.0/8.0);
+		piAegypten = 16.0/ 9.0*16.0 /9.0;
+		piChina = Math.sqrt(10);
+		piEuropa = 3.0 + (1.0/7.0);
+		
+		System.out.println("Java Math.PI: "+ Math.PI); 
+		System.out.println("Babylon: " +piBabylon +
+				"\t\t\t\tAbweichung: "+(Math.PI-piBabylon));
+		System.out.println("Äqypten: " +piAegypten +
+				"\t\tAbweichung: "+(Math.PI-piAegypten));
+		System.out.println("China: " +piChina +
+				"\t\tAbweichung: "+(Math.PI-piChina));
+		System.out.println("Europa: " +piEuropa +
+				"\t\tAbweichung: "+(Math.PI-piEuropa));
+			
+	}
+
+}
