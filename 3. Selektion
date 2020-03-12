@@ -1,0 +1,22 @@
+public class Selektion {
+	public static void main(String[]args) {
+		int zufall = 0;
+		int grenze = 100;
+		
+		zufall = Tools.random(grenze);
+		//System.out.println("Deine Zahl lautet: " + zufall);
+		if (zufall%2 == 0) {
+			System.out.println("Sie haben gewonnen!");
+			if (zufall <= 20) {
+				System.out.println("Sie sind ein Glueckspilz");
+				if (zufall <= 10) {
+					System.out.println("Sie haben das Glueck der gesamten Welt!");
+				}
+			}	
+		}
+		
+		else {
+			System.out.println("Sie haben verloren!");
+    }
+	}	
+}
