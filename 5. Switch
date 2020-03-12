@@ -1,0 +1,47 @@
+
+public class Aufagbe5 {
+	public static void main(String[]args) {
+		int auswahl=1;
+		int wasser = 0, saft = 0, wein = 0, sekt = 0, bier = 0, mix = 0, kaffee = 0;
+		
+		while (auswahl != 9 ) {
+			System.out.println("\nMenüauswahl");
+			System.out.println("1 - Wasser");
+			System.out.println("2 - Saft");
+			System.out.println("3 - Wein");
+			System.out.println("4 - Sekt");
+			System.out.println("5 - Bier"); 
+			System.out.println("6 - Mixgetränk"); 
+			System.out.println("7 - Kaffee");
+			System.out.println("8 - Vergebene Getränke"); 
+			System.out.println("9 - Drucke eine Liste");
+			auswahl = Tools.intEingabe();
+		
+			switch (auswahl){
+			case 1: wasser +=1; break;
+			case 2: saft +=1; break;
+			case 3: wein +=1; break;
+			case 4: sekt +=1; break;
+			case 5: bier+=1; break;
+			case 6: mix +=1; break;
+			case 7: kaffee +=1; break;
+			case 8: {
+					System.out.println("\nEs wurden ausgeteilt: ");
+					System.out.println("Wasser: "+wasser);
+					System.out.println("Saft: "+saft);
+					System.out.println("Wein: "+wein);
+					System.out.println("Sekt: "+sekt);
+					System.out.println("Bier: "+bier);
+					System.out.println("Mixgetränk: "+mix);
+					System.out.println("Kaffee: "+kaffee);
+					System.out.println("Insgesamt: "+
+							(wasser+saft+wein+sekt+bier+mix+kaffee)); 
+					break;
+			}
+			case 9: System.out.println("\nENDE - Der Abend ist vorbei!");
+					break;
+			default: System.out.println("\nFALSCHE EINGABE");
+			} 
+		}
+	}
+}
